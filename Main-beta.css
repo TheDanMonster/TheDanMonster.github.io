@@ -1,0 +1,932 @@
+/* main CSS*/
+html {
+	overflow-y: scroll;
+}
+body {
+    background-color: #ffffff;
+    font-family: 'AkkuratLightPro-Regular', Calibri;
+    color: #999;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    transition: font-size 0.5s;
+	
+}
+aside {
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    float: left;
+    padding: 3% 7%;
+    box-sizing: border-box;
+    background: url("http://i.imgur.com/EinPKO3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: width 0.8s;
+    transition: padding 0.5s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+	z-index: 100;
+}
+
+
+article {
+    width: 36%;
+    display: block;
+    position: relative;
+    float: right;
+    padding: 3% 7%;
+    transition: padding 0.5s;
+	font-family: Calibri;
+}
+h2 {
+    color: #000000;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 20px;
+	font-family: Pristina Regular, Tempus Sans ITC Regular, Perpetua;
+	text-decoration: underline;
+}
+h3 {
+	color: #000000;
+	text-decoration: underline;
+	font-size: 150%;
+	text-align: left;
+}
+
+.education {
+	position: relative;
+	top: -215px;
+	
+}
+div p {
+	font-family: Terminal, Calibri, Arial;
+	font-size: 16px;
+	
+}
+.square {
+	list-style-type: none;
+	text-indent: 50px;
+	display: inline-block;
+}
+article p {
+	color: #000000;
+	font-family: Calibri;
+	font-size: 20px;
+}
+ul {
+    display: list-item;
+	list-style-type: none;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+	text-decoration: none;
+	text-shadow; 3px;
+	color: #000000;
+}
+
+
+ul a {
+	color: white;
+	text-decoration: none;
+}
+ul a:hover {
+	color: white;
+}
+
+.avatar1 {
+	border-style: ridge;
+	border-color: brown;
+	border-width: 4px;
+	box-shadow: 1px 1px 1px grey;
+	width: auto;
+	height: auto;
+	position: relative;
+	z-index: 100;
+
+}
+
+/* linkedin profile*/
+.linkedin {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 420px;
+	right: 10px;
+	z-index: 100;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.linkedin:hover {
+	position: relative;
+	z-index: 100;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+/* IE Sucks Icon - no seriously, doing this for IE is terrrrribad */
+.IEsucks {
+	width: 15%;
+	height: 15%;
+	position: relative;
+	top: 33px;
+	right: -43px;
+	z-index: 100;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.IEsucks:hover {
+	position: relative;
+	z-index: 100;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+
+.logo {
+	display: block;
+	width: 20%;
+	height: 7%;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	float: bottom;
+	left: 300px;
+	z-index: 100;
+	
+}
+
+.intro {
+	text-shadow: 2px 2px #e6e6e6;
+}
+
+/* work experience with The MEMIC Group */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	top: -35px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 70px; /* this aligns the dropdown with the box*/
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #fd432a;
+	padding: 1px 3px;
+
+
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	z-index: 100;
+	box-shadow: 0px 8px 10px 0px #fd432a;
+
+}
+
+/* work experience with AIG*/
+.dropdown2 {
+	position: relative;
+	display: inline-block;
+	top: -90px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+
+}
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #ff6b25;
+	padding: 4px 8px;
+}
+.dropdown2:hover .dropdown-content2 {
+	display: block;
+	z-index: 100; 
+	box-shadow: 0px 8px 10px 0px #ff6b25;
+}
+
+/* work experience with Liberty Mutual*/
+.dropdown3 {
+	position: relative;
+	display: inline-block;
+	top: -144px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content3 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #ffc736;
+	padding: 4px 8px;
+}
+.dropdown3:hover .dropdown-content3 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #ffc736;
+}
+
+/* work experience with Sagadahoc County*/
+.dropdown4 {
+	position: relative;
+	display: inline-block;
+	top: -197px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content4 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #ae9e3c;
+	padding: 4px 8px;
+}
+.dropdown4:hover .dropdown-content4 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #ae9e3c;
+}
+
+/* Southern New Hampshire University */
+.dropdown7 {
+	position: relative;
+	display: inline-block;
+	top: -244px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content7 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #59916c;
+	padding: 4px 8px;
+}
+.dropdown7:hover .dropdown-content7 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #59916c;
+}
+
+
+/* PSU education*/
+.dropdown5 {
+	position: relative;
+	display: inline-block;
+	top: -295px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content5 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #31bc9f;
+	padding: 4px 8px;
+}
+.dropdown5:hover .dropdown-content5 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #31bc9f;
+}
+
+
+/* Tokyo International University */
+.dropdown6 {
+	position: relative;
+	display: inline-block;
+	top: -347px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content6 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #284d5f;
+	padding: 4px 8px;
+}
+.dropdown6:hover .dropdown-content6 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #234d5f;
+}
+
+/* CPCU Info*/
+.dropdown8 {
+	position: relative;
+	display: inline-block;
+	top: -401px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content8 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #0f1d24;
+	padding: 4px 8px;
+}
+.dropdown8:hover .dropdown-content8 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #0f1d24;
+}
+
+
+/* this part took a stupid amount of time
+but I left the image animation above and commented it out */
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+}
+
+/* I tried to clean this up below, but I'm at a loss... works well though! */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	-ms-backface-visibility: hidden;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 208px;
+	height: 427px;
+	-webkit-transition: 0s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition: 0s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition: 0s;
+    -ms-transition-delay: 0.2s;
+    -o-transition: 0s;
+    -o-transition-delay: 0.2s;
+    transition: 0s;
+    transition-delay: 0.2s;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+	
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+  
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.back {
+	-ms-backface-visibility: hidden;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	background: url("http://sv102.piclect.com/25ee594e0/m/15/03/11/4nyi7kn-imgur.jpg");
+	background-position: center;
+}
+.front {
+	background: url("http://sv102.piclect.com/25ee594e0/m/15/03/11/4nyi7kn-imgur.jpg");
+	background-position: center;
+}
+.front .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 25%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+
+.back-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: Courier;
+	font-size: 2em;
+}
+.front p {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0px;
+	text-align: center;
+	font-weight: bold;
+	padding: 0 10px;
+	font-family: Palatino Linotype, Calibri;
+	line-height: 2em;
+	color: #ffffff;
+}
+
+.back p {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+	text-align: center;
+	font-weight: bold;
+	padding: 0 13px;
+	font-family: Palatino Linotype, Calibri;
+	line-height: 2em;
+	color: #ffffff;
+}
+/* this is the icon for the Company/Job Title. The goal is to save space and time (and money!) on a transition summary */
+
+/* this is for The MEMIC Group */
+.label {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'The MEMIC Group - 2015 to Present';
+	color: white;
+
+}
+
+
+.label.success {
+	background-color: #fd432a;
+}
+
+.dropdown ul a p.new-label span{
+	position: relative;
+	content: 'The MEMIC Group - 2015 to Present'
+}
+
+.dropdown:hover ul a p.new-label span {
+	display: none;
+
+}
+.dropdown:hover ul a p.new-label:after {
+	content: 'Quality Assurance Supervisor';
+	text-align: center;
+	box-shadow: 0px 0px 150px #fd432a;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+	transform: translateX(1.5); /* why do people use IE11?? It's terrible!*/
+
+}
+
+/* this is for AIG */
+.label2 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'AIG - 2010 to 2015';
+	color: white;
+
+
+}
+.label2.success2 {
+	background-color: #ff6b25;
+}
+
+.dropdown2 ul a p.new-label2 span{
+	position: relative;
+	content: 'AIG - 2010 to 2015'
+}
+
+.dropdown2:hover ul a p.new-label2 span {
+	display: none;
+
+}
+.dropdown2:hover ul a p.new-label2:after {
+	content: 'Underwriter';
+	text-align: center;
+	box-shadow: 0px 0px 150px #ff6b25;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+}
+
+/* this is for Liberty Mutual */
+.label3 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Liberty Mutual - 2006 to 2010';
+	color: white;
+
+
+}
+.label3.success3 {
+	background-color: #ffc736;
+}
+
+.dropdown3 ul a p.new-label3 span{
+	position: relative;
+	content: 'Liberty Mutual - 2006 to 2010'
+}
+
+.dropdown3:hover ul a p.new-label3 span {
+	display: none;
+
+}
+.dropdown3:hover ul a p.new-label3:after {
+	content: 'UW Production Manager';
+	text-align: center;
+	box-shadow: 0px 0px 150px #ffc736;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+
+/* this is for Sagadahoc County */
+.label4 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Sagadahoc County - 2004 to 2006';
+	color: white;
+
+
+}
+.label4.success4 {
+	background-color: #ae9e3c;
+}
+
+.dropdown4 ul a p.new-label4 span{
+	position: relative;
+	content: 'Sagadahoc County - 2004 to 2006'
+}
+
+.dropdown4:hover ul a p.new-label4 span {
+	display: none;
+
+}
+.dropdown4:hover ul a p.new-label4:after {
+	content: 'Acting/Deputy County Clerk';
+	text-align: center;
+	box-shadow: 0px 0px 150px #ae9e3c;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+
+/* this is for SNHU*/
+.label7 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Southern New Hampshire University';
+	color: white;
+
+
+}
+.label7.success7 {
+	background-color: #59916c;
+}
+
+.dropdown7 ul a p.new-label7 span{
+	position: relative;
+	content: 'Southern New Hampshire University'
+}
+
+.dropdown7:hover ul a p.new-label7 span {
+	display: none;
+
+}
+.dropdown7:hover ul a p.new-label7:after {
+	content: 'MBA: Quantitative Analysis - 2017';
+	text-align: center;
+	box-shadow: 0px 0px 150px #59916c;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+.bullet {
+	list-style-type: none;
+	text-indent: 50px;
+	display: inline-block;
+	line-height: 50%;
+	
+}
+
+
+/* this is for plymouth state*/
+.label5 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Plymouth State University';
+	color: white;
+
+
+}
+.label5.success5 {
+	background-color: #31bc9f;
+}
+
+.dropdown5 ul a p.new-label5 span{
+	position: relative;
+	content: 'Plymouth State University'
+}
+
+.dropdown5:hover ul a p.new-label5 span {
+	display: none;
+
+}
+.dropdown5:hover ul a p.new-label5:after {
+	content: 'BA: History - 2004';
+	text-align: center;
+	box-shadow: 0px 0px 150px #31bc9f;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+
+/* this is for TIU*/
+.label6 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Tokyo International University';
+	color: white;
+
+
+}
+.label6.success6 {
+	background-color: #284d5f;
+}
+
+.dropdown6 ul a p.new-label6 span{
+	position: relative;
+	content: 'Tokyo International University'
+}
+
+.dropdown6:hover ul a p.new-label6 span {
+	display: none;
+
+}
+.dropdown6:hover ul a p.new-label6:after {
+	content: 'Certificate: Japanese 2002, Japanese 2003';
+	text-align: center;
+	box-shadow: 0px 0px 150px #284d5f;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+
+/* CPCU Info */
+.label8 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'CPCU';
+	color: white;
+
+
+}
+.label8.success8 {
+	background-color: #0f1d24;
+}
+
+.dropdown8 ul a p.new-label8 span{
+	position: relative;
+	content: 'CPCU'
+}
+
+.dropdown8:hover ul a p.new-label8 span {
+	display: none;
+
+}
+.dropdown8:hover ul a p.new-label8:after {
+	content: 'In Progress';
+	text-align: center;
+	box-shadow: 0px 0px 150px #0f1d24;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
+
