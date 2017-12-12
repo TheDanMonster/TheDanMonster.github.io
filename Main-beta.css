@@ -362,7 +362,7 @@ ul a:hover {
 .dropdown8 {
 	position: relative;
 	display: inline-block;
-	top: -401px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+	top: -455px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
 }
 .dropdown-content8 {
 	display: none;
@@ -381,6 +381,28 @@ ul a:hover {
 	box-shadow: 0px 8px 10px 0px #0f1d24;
 }
 
+/* Duke Info*/
+.dropdown9 {
+	position: relative;
+	display: inline-block;
+	top: -401px; /* this aligns the company boxes... still having errors when trying to scroll to read the details...*/
+}
+.dropdown-content9 {
+	display: none;
+	position: absolute;
+	top: 70px;
+	background-color: #F9F9F9;
+	min-width: 400px;
+	max-width: 600px;
+	line-height: 90%;
+	box-shadow: 0px 8px 10px 0px #0f1d24;
+	padding: 4px 8px;
+}
+.dropdown9:hover .dropdown-content9 {
+	display: block;
+	z-index: 100; /* I had to add this so the dropdown menu would be visable */
+	box-shadow: 0px 8px 10px 0px #0f1d24;
+}
 
 /* this part took a stupid amount of time
 but I left the image animation above and commented it out */
@@ -905,7 +927,7 @@ but I left the image animation above and commented it out */
 
 }
 .label8.success8 {
-	background-color: #0f1d24;
+	background-color: #D2691E;
 }
 
 .dropdown8 ul a p.new-label8 span{
@@ -930,3 +952,53 @@ but I left the image animation above and commented it out */
 
 }
 
+/* Duke Info */
+.label9 {
+    display:inline-block;
+    border:0;
+    width:auto;
+    height:-10px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	padding-top: 8px;
+	text-align: center;
+	content: 'Duke';
+	color: white;
+
+
+}
+.label9.success9 {
+	background-color: #0f1d24;
+}
+
+.dropdown9 ul a p.new-label9 span{
+	position: relative;
+	content: 'Duke'
+}
+
+.dropdown9:hover ul a p.new-label9 span {
+	display: none;
+
+}
+.dropdown9:hover ul a p.new-label9:after {
+	content: 'Certificate';
+	text-align: center;
+	box-shadow: 0px 0px 150px #0f1d24;
+    z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);  
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transform: translateX(1.5);
+
+}
