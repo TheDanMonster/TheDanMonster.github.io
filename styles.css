@@ -1,8 +1,10 @@
-/* Minimalist, modern base */
+/* --- High-Contrast Dark Mode Base --- */
 :root {
-    --bg-color: #fafafa;
-    --text-color: #111;
-    --accent: #555;
+    --bg-color: #0a0a0a;
+    --text-color: #f4f4f4;
+    --text-muted: #888888;
+    --border-color: #222222;
+    --accent: #ffffff;
 }
 
 body {
@@ -14,12 +16,12 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 10vh auto;
     padding: 0 2rem;
 }
 
-/* Artistic typography */
+/* --- Typography --- */
 h1 {
     font-size: 4rem;
     font-weight: 300;
@@ -28,120 +30,76 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--accent);
-    margin-top: 4rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
-}
-
-/* Clean, interactive project cards */
-.project-card a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.project-card a:hover {
-    transform: translateX(10px);
-}
-
-.project-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.view-project {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--accent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card a:hover .view-project {
-    opacity: 1;
-}
-
-/* Subtle entrance animation */
-.fade-in {
-    animation: fadeIn 1.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* --- Project Page Specifics --- */
-
-.top-nav {
-    margin-bottom: 4rem;
-}
-
-.back-link {
-    text-decoration: none;
-    color: var(--accent);
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.back-link:hover {
-    color: var(--text-color);
-}
-
-.project-hero {
-    margin-bottom: 4rem;
-}
-
-.project-subtitle {
-    font-size: 1.5rem;
-    color: var(--accent);
-    font-weight: 300;
-    margin-top: 0;
-}
-
-.detail-block {
-    margin-bottom: 4rem;
-}
-
-.detail-block h2 {
-    margin-top: 0;
-    border: none;
-    padding: 0;
     font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-top: 4rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.feature-list {
-    list-style: none;
-    padding: 0;
-}
-
-.feature-list li {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #eee;
+p {
+    color: var(--text-muted);
     font-size: 1.1rem;
 }
 
-/* Minimalist Image Placeholder */
-.image-box {
-    width: 100%;
-    height: 450px;
-    background-color: #f4f4f4;
+/* --- High-Density Project List --- */
+.project-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    border-radius: 8px;
-    margin: 4rem 0;
-    font-style: italic;
-    border: 1px dashed #ccc;
+    flex-direction: column;
+    margin-top: 1rem;
 }
+
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile default */
+    gap: 0.25rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+/* Desktop layout triggers at 600px */
+@media (min-width: 600px) {
+    .project-row {
+        grid-template-columns: 250px 1fr 30px;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+.project-row:hover {
+    border-color: var(--accent);
+}
+
+.project-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.project-desc {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.project-row:hover .project-desc {
+    color: var(--text-color);
+}
+
+.project-arrow {
+    display: none;
+    font-family: monospace;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: right;
+}
+
+@
